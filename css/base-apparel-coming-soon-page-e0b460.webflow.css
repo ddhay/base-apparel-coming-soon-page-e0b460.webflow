@@ -1,0 +1,271 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+.w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.w-layout-hflex {
+  flex-direction: row;
+  align-items: flex-start;
+  display: flex;
+}
+
+@media screen and (max-width: 991px) {
+  .w-layout-blockcontainer {
+    max-width: 728px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .w-layout-blockcontainer {
+    max-width: none;
+  }
+}
+
+.body {
+  color: #ce9898;
+  font-size: 16px;
+}
+
+.section {
+  max-width: 1440px;
+  height: 800px;
+}
+
+.container {
+  max-width: 1440px;
+  height: 800px;
+  padding-left: 165px;
+  font-family: Josefin Sans, sans-serif;
+}
+
+.heading {
+  color: #5c2424;
+  letter-spacing: 17px;
+  max-width: 444px;
+  height: 192px;
+  margin-bottom: 32px;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 64px;
+}
+
+.paragraph {
+  color: #5c2424;
+  max-width: 444px;
+  margin-bottom: 40px;
+  line-height: 28px;
+}
+
+.text-span {
+  color: #423a3a;
+  font-weight: 600;
+}
+
+.div-block {
+  margin-top: 75px;
+}
+
+.image {
+  margin-top: 65px;
+  margin-bottom: 84px;
+}
+
+.field-label, .text-field, .field-label-2 {
+  display: none;
+}
+
+.text-field-2 {
+  border: 0 #ce9898;
+  border-radius: 28px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.text-field-2::placeholder {
+  padding-left: 32px;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.email-submit {
+  background-color: #ce9898;
+  border-radius: 28px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-left: 20px;
+  font-size: 54px;
+  line-height: 33px;
+}
+
+.image-2 {
+  background-color: #f8bfbf;
+}
+
+.div-block-2 {
+  flex-flow: column;
+  max-width: 610px;
+  height: 800px;
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.flex-block {
+  flex-flow: column;
+  display: none;
+}
+
+.section-2 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.flex-block-2 {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border: 1px solid rgba(92, 36, 36, .49);
+  border-radius: 28px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, .2);
+}
+
+.image-3 {
+  order: -1;
+  display: none;
+}
+
+.image-4 {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding-left: 100px;
+  }
+
+  .heading, .paragraph {
+    text-align: center;
+    margin-left: 100px;
+  }
+
+  .div-block {
+    max-width: 700px;
+    margin-top: 139px;
+    margin-left: 9px;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .div-block-2 {
+    order: -1;
+    padding-top: 40px;
+  }
+
+  .flex-block-2 {
+    margin-left: 89px;
+  }
+
+  .image-3 {
+    max-width: 20%;
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  .flex-block-3 {
+    flex-flow: column;
+  }
+
+  .image-4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heading, .paragraph {
+    margin-left: 0;
+  }
+
+  .div-block {
+    max-width: 420px;
+    margin-top: -89px;
+  }
+
+  .flex-block-2 {
+    margin-left: 0;
+  }
+
+  .flex-block-3 {
+    margin-right: 20px;
+    padding-left: 0;
+    padding-right: 40px;
+  }
+
+  .image-4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .heading {
+    letter-spacing: 11px;
+    height: 132px;
+    margin-left: 21px;
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .paragraph {
+    max-width: 311px;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .text-field-2 {
+    padding-left: 0;
+    font-size: 14px;
+  }
+
+  .div-block-2 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 363px;
+    height: 461px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .flex-block-2 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 11px;
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .flex-block-3 {
+    margin-left: -95px;
+    margin-right: 0;
+  }
+
+  .image-4 {
+    display: inline-flex;
+  }
+}
+
+
